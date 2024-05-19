@@ -30,5 +30,5 @@ def set_library_log_level(library_name, level):
     logging.getLogger(library_name).setLevel(level)
     
 # Configure logging
-logger = setup_logger(__name__, 'prospectari_bot.log')
+logger = setup_logger(__name__, 'app.log')
 set_library_log_level('httpx', logging.WARNING)

@@ -1,4 +1,3 @@
-#!/home/pi/python_apps/prospectari_bot/.venv/bin/python
 
 import httpx, sqlite3, re, json, time
 from lxml import html

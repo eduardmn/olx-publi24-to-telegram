@@ -75,43 +75,43 @@ Save and close the crontab file. The script will now run every 10 minutes and ch
 
 ## Functions
 
-setup_database()
+`setup_database()`
 Creates the SQLite database and tables if they do not exist.
 
-send_telegram_request(url, data, timeout)
+`send_telegram_request(url, data, timeout)`
 Sends a request to the Telegram API with retry logic.
 
-clean_html_breaks(text)
+`clean_html_breaks(text)`
 Replaces HTML break tags with newline characters.
 
-send_multiple_photos(photo_urls, chat_id)
+`send_multiple_photos(photo_urls, chat_id)`
 Sends multiple photos to the specified Telegram chat.
 
-send_telegram_message(text, chat_id)
+`send_telegram_message(text, chat_id)`
 Sends a text message to the specified Telegram chat.
 
-send_telegram_photo(photo_url, chat_id, caption)
+`send_telegram_photo(photo_url, chat_id, caption)`
 Sends a photo with an optional caption to the specified Telegram chat.
 
-process_and_resolve_photos(photos)
+`process_and_resolve_photos(photos)`
 Processes a list of photo dictionaries to resolve their URLs.
 
-publi24_offer_process(url, xpath)
+`publi24_offer_process(url, xpath)`
 Fetches a webpage and extracts all URLs and the description from a specific script identified by an XPath.
 
-record_exists(table, offer_id)
+`record_exists(table, offer_id)`
 Checks if a record with the specified offer ID exists in the database.
 
-insert_record(table, offer_id)
+`insert_record(table, offer_id)`
 Inserts a new offer ID into the specified table in the database.
 
-check_olx_offers()
+`check_olx_offers()`
 Checks for new offers on OLX, processes them, and sends them to the specified Telegram chat.
 
-check_publi24_offers()
+`check_publi24_offers()`
 Checks for new offers on Publi24, processes them, and sends them to the specified Telegram chat.
 
-main()
+`main()`
 Sets up the database and checks for new offers on OLX and Publi24.
 
 ## Contributing
@@ -121,5 +121,7 @@ Feel free to open issues or submit pull requests with improvements.
 ## License
 
 This project is licensed under the MIT License.
+
+## Enjoy
 
 Now you have a script for monitoring and sending offers from OLX and Publi24 to a Telegram chat. Simply update the placeholders with the actual endpoints and your Telegram bot credentials to get started. To run the script continuously, set up a cron job to execute the script at your desired interval, such as every 10 minutes.
